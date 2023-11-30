@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: url(./background\ flowers.jpg);
+  background-size: cover;
+}
+.clouds {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  animation: to-let 40s linear infinite;
+}
+.cloud {
+  width: 100%;
+}
+.cloud img {
+  opacity: 0.5;
+}
+@keyframes to-let {
+  0% {
+    transform: translateX(1800px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.butterfly0 {
+  position: relative;
+  height: calc(195px / 3);
+  width: calc(700px / 10);
+  overflow: hidden;
+  background-image: url(CIIjvXa.png);
+  animation: wings0 1s steps(10) infinite, fly0 10s linear infinite;
+}
+@keyframes wings0 {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 700px;
+  }
+}
+@keyframes fly0 {
+  0% {
+    transform: translateX(-65px);
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateX(1800px);
+  }
+}
+.butterfly {
+  display: flex;
+  flex-direction: column;
+}
+.butterfly1 {
+  position: relative;
+  height: calc(195px / 3);
+  width: calc(700px / 10);
+  overflow: hidden;
+  background-image: url(CIIjvXa.png);
+  animation: wings 0.8s steps(10) infinite, fly 10s linear infinite;
+}
+@keyframes wings {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 700px;
+  }
+}
+@keyframes fly {
+  0% {
+    transform: translateX(-65px);
+  }
+  100% {
+    transform: translateX(1800px);
+  }
+}
+
+.butterfly22 {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+.butterfly2 {
+  position: relative;
+  height: calc(195px / 3);
+  width: calc(700px / 10);
+  overflow: hidden;
+  background-image: url(CIIjvXa.png);
+  animation: wings2 0.8s steps(10) infinite, fly2 10s linear infinite;
+}
+@keyframes wings2 {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 700px;
+  }
+}
+@keyframes fly2 {
+  0% {
+    transform: translateX(-65px) translateY(10px);
+  }
+  12.5% {
+    transform: translateX(-0px) translateY(-120px);
+  }
+  25% {
+    transform: translateX(150px) translateY(-120px);
+  }
+  37.5% {
+    transform: translateX(300px) translateY(10px);
+  }
+  50% {
+    transform: translateX(500px) translateY(-150px) rotateY(180deg);
+  }
+  62.5% {
+    transform: translateX(300px) translateY(-120px) rotateY(180deg);
+  }
+  75% {
+    transform: translateX(150px) translateY(30px) rotateY(180deg);
+  }
+  87.5% {
+    transform: translateX(0px) translateY(30px) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(-65px) translateY(130px) rotateY(180deg);
+  }
+}
+.butterfly33 {
+  display: flex;
+  justify-content: right;
+  width: 70%;
+}
+.butterfly3 {
+  position: relative;
+  height: calc(195px / 3);
+  width: calc(700px / 10);
+  overflow: hidden;
+  background-image: url(CIIjvXa.png);
+  animation: wings3 1.5s steps(10) infinite, fly3 10s linear infinite;
+}
+@keyframes wings3 {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 700px;
+  }
+}
+@keyframes fly3 {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.butterfly44 {
+  display: flex;
+  justify-content: right;
+}
+.butterfly4 {
+  position: relative;
+  height: calc(195px / 3);
+  width: calc(700px / 10);
+  overflow: hidden;
+  background-image: url(CIIjvXa.png);
+  animation: wings4 0.8s steps(10) infinite, testing 10s linear infinite;
+}
+@keyframes wings4 {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 700px;
+  }
+}
+
+@keyframes testing {
+  0% {
+    transform: translateX(0px) translateY(-250px) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(-1800px) translateY(50px) rotateY(180deg);
+  }
+}
